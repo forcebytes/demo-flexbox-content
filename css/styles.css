@@ -26,7 +26,7 @@ li {
 
 .d {
     background-color: #3cb371;
-    /* font-size: 72px; */
+    font-size: 72px;
 }
 
 .e {
@@ -35,4 +35,22 @@ li {
 
 .f {
     background-color: #9370db;
+}
+
+.flex {
+    /* flexbos responds to the content and their width first, and then it distributes the left over space. */
+    display: flex;     
+
+    /* the justify-content property allows us to distribute the leftover space on the main axis. Flex-start is the default value.  */
+    justify-content: flex-start;
+    justify-content: center;
+    justify-content: space-between;
+    justify-content: space-around;
+
+    /* The align items allows distribution of space on the cross axis. The tallest item defines the height of the whole row, and all other items stretch to fit. Therefore the default value is stretched. */
+    align-items: stretch;
+    align-items: flex-start;
+    align-items: flex-end;
+    align-items: center;
+    align-items: baseline;
 }
